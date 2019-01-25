@@ -12,8 +12,8 @@ $aboutMainImage = "public/img/normalSize/HomeImage.jpg";
 $imagesLocationNormal= "public/img/normalSize/";
 $images= array
   (
-  array("MoSalah_website1.jpg","Mo Salah Jersey, 2018","Pencil on paper", "Framed: 104 cm x 88 cm"),
-  array("Batman.jpg","Batman's Time, 2018","Pencil on paper", "Framed: 67 cm x 116 cm "),
+  array("MoSalah_website1.jpg","Mo Salah Jersey, 2018","Pencil on paper", "Framed: 104 cm x 88 cm", "GIFTED TO MO SALAH, AVAILABLE PRINTS"),
+  array("Batman.jpg","Batman's Time, 2018","Pencil on paper", "Framed: 67 cm x 116 cm ", "ORIGINAL AND PRINTS AVAILABLE"),
   array("ChaosIII.jpg","Chaos III: Swirl, 2017","Pastels on paper","Framed: 116 cm x 85 cm ", "AVAILABLE IN PLUS ONE GALLERY"),
   array("ChaosII.jpg","Chaos II, 2016","Pastels on paper","Framed: 116 cm x 85 cm ", "SOLD"),
   array("Chaos.jpg","Chaos, 2016","Pastels on paper","Framed: 116 cm x 85 cm ", "SOLD"),
