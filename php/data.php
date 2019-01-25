@@ -73,7 +73,7 @@ $articles= array
 //Contact Data
 $contactPageText = "contact@nourinehammad.com";
 $facebookPage="https://m.facebook.com/profile.php?id=1413192872293705&refid=17";
-$instagramPage="https://www.instagram.com/nourinehammadart/";
+$instagramPage="https://www.instagram.com/nourinehammad_art/";
 $enquiryText = "";
 
 
