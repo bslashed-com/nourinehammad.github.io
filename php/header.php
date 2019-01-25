@@ -6,7 +6,7 @@ echo '
   <meta name="google" content="notranslate">
   <meta http-equiv="Content-Language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link rel="icon" href="'.$tabIcon.'">
+  <link rel="icon" href="' . $tabIcon . '">
     <script type="text/javascript" src="public/library/jquery/jquery-2.1.4.min.js" ></script>
     <script type="text/javascript" src="public/library/bootstrap/bootstrap.js" ></script>
     <script type="text/javascript" src="public/library/photoswipe/photoSwipeCodePen.js"></script>
@@ -31,12 +31,13 @@ echo '
     <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/article.css" />
     <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/about.css" />
     <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/contact.css" />
+    <link rel="stylesheet" type="text/css" media="screen,print" href="public/css/courses.css" />
     <title>Nourine Hammad </title>
 
 
   <script type="text/javascript">
 
-            var exhibitionPhotoSize    = ' .  json_encode($exhibitionPhotoSize) .';
+            var exhibitionPhotoSize    = ' . json_encode($exhibitionPhotoSize) . ';
 
 
   </script>

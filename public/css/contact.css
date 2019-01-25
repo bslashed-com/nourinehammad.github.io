@@ -11,6 +11,11 @@
   display:inline;
 }
 
+#nourineMail
+{
+  text-align:center
+}
+
 
 #contactTopDiv{height: 10.7vw;}
 
@@ -26,6 +31,12 @@
 {
   clear:both;
   float: none!important;
+}
+
+#theMailCenterA
+{
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width:607px)

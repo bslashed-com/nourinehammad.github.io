@@ -4,30 +4,29 @@
 // so had to use same method but with differnet name..
 function givenImageIndexGetImageCaption1($index)
 {
-	global $images;
-	return $images[$index][1];
+    global $artworkImages;
+    return $artworkImages[$index][1];
 }
 
 function givenImageIndexGetBigImagePath1($index)
 {
-	global $images,$imagesLocationNormal;
-	return $imagesLocationNormal.$images[$index][0];
+    global $artworkImages, $imagesLocationNormal;
+    return $imagesLocationNormal . $artworkImages[$index][0];
 }
 
 function getHomeMainImage()
 {
-  global $mainImageNumber;
+    global $mainImageNumber;
 
-	if($mainImageNumber=="")
-	{
-		return "";
-	}
+    if ($mainImageNumber == "") {
+        return "";
+    }
 
 
-  $imagePathBig = givenImageIndexGetBigImagePath1($mainImageNumber);
-  $imageCaption = givenImageIndexGetImageCaption1($mainImageNumber);
+    $imagePathBig = givenImageIndexGetBigImagePath1($mainImageNumber);
+    $imageCaption = givenImageIndexGetImageCaption1($mainImageNumber);
 
-    $formatNew ='
+    $formatNew = '
 
 
     <a id="theHomeMain" href="%s" data-size="545x865" class="demo-gallery__img--main">
@@ -35,8 +34,8 @@ function getHomeMainImage()
        <figure>%s</figure>
     </a>';
 
-    $result =  sprintf($formatNew,$imagePathBig,$imagePathBig,$imageCaption);
-       return $result;
+    $result = sprintf($formatNew, $imagePathBig, $imagePathBig, $imageCaption);
+    return $result;
 
 }
 

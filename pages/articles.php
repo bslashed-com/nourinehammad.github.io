@@ -1,16 +1,14 @@
 <div id="Articles" class="contentbox">
 
 
+    <div id="articlesDiv" class="centerPseudo">
 
-<div id="articlesDiv" class="centerPseudo">
+        <?php
+        $articlesCount = getArticlesCount();
+        for ($i = 0; $i < $articlesCount; $i++) {
+            echo givenArticlesIndexGetArticlesParagraph($i);
+        }
+        ?>
 
-    <?php
-       $articlesCount=getArticlesCount();
-       for ($i = 0; $i < $articlesCount; $i++)
-       {
-         echo givenArticlesIndexGetArticlesParagraph($i);
-       }
-    ?>
-
-</div>
+    </div>
 </div>
