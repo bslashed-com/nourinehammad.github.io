@@ -73,6 +73,12 @@ $articles = array
     array("Egyptian Hyperrealism Artist Claims International Recognition in the UK | Egyptian Streets", "http://egyptianstreets.com/2015/09/13/egyptian-hyperrealism-artist-claims-international-recognition-in-the-uk/"),
 );
 
+//Courses Data
+$courses = array
+(
+   array("Photorealistic Drawing with Pencils: Beginner to Advanced | Udemy", "https://www.udemy.com/photorealistic-drawing-with-pencils-beginner-to-advanced"),
+);
+
 //Contact Data
 $contactPageText = "contact@nourinehammad.com";
 $facebookPage = "https://m.facebook.com/profile.php?id=1413192872293705&refid=17";
