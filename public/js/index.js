@@ -226,6 +226,7 @@ $(document).ready(function () {
         if (lastChoosenTab != undefined && tt.id != lastChoosenTab.id) {
             chooseLastChoosenTabAndUpdateActiveUIGivenLi(tt);
         }
+        history.pushState(null, null, '#'+lastChoosenTab.childNodes[0].id);
     });
 
 
@@ -234,9 +235,16 @@ $(document).ready(function () {
     mq.addListener(WidthChange);
     WidthChange(mq);
     CSSPropertiesAddedOnTheFly();
+    goToGivenTabIfGiven();
+
 
 
 });
+
+function goToGivenTabIfGiven()
+{
+    $(window.location.hash).click();
+}
 
 
 function gotoArtworkIfUrlContainsGidAndPid() {
