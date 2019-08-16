@@ -15,9 +15,21 @@
     text-align: left;
 }
 
+#promoCodeUdemy
+{
+
+letter-spacing: 1px !important;
+line-height:28px;
+}
+
+#promoCodeUdemyDiv
+{
+margin-bottom: 20px;
+}
+
 .videoCourses
 {
- margin-top:60px;
+ margin-top: 20px;
 }
 
 .video-container {position: relative;padding-bottom: 56.25%;padding-top: 30px;height: 0;overflow: hidden; /* width: 80%; *//* margin: 40px; */}
