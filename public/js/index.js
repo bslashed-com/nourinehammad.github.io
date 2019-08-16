@@ -174,7 +174,6 @@ function resizeNav() {
         $("#theNav" + ff).css('margin-left', testMargin + 'px');
         leftMargin = ((viewportWidth - totalPossibleWidth) / 2);
         $("#nav").css('margin-left', leftMargin + 'px');
-        console.log("magic"+ magic + "dd " + dd)
     }
 
     var maxMarginAllowed = 27;//max margin

@@ -71,6 +71,8 @@ $articles = array
     array("An interview with Nourine Hammad | Plus One Gallery", "http://www.plusonegallery.com/blog/52/"),
     array("Hyperrealism 3D drawings by Nourine Hammad | Art People Gallery", "https://www.artpeoplegallery.com/hyperrealism-3d-drawings-nourine-hammad/"),
     array("Egyptian Hyperrealism Artist Claims International Recognition in the UK | Egyptian Streets", "http://egyptianstreets.com/2015/09/13/egyptian-hyperrealism-artist-claims-international-recognition-in-the-uk/"),
+    array("Nourine Hammad featured in DHL campaign with Mo Salah", "https://m.youtube.com/watch?v=Wj1BW83frBw"),
+
 );
 
 //Courses Data

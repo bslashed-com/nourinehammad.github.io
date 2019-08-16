@@ -9,7 +9,13 @@
 
 #coursesDiv
 {
+    display: inline-block;
     margin-left: 5%;
     margin-right: 5%;
     text-align: left;
+}
+
+.videoCourses
+{
+ margin-top:60px
 }
