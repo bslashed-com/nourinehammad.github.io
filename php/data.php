@@ -19,7 +19,12 @@ $imagesLocationNormal = "public/img/normalSize/";
 
 $artworkImages = array
 (
-    array("IMG_1736.jpg", "The Blooming future, 2019", "Mural","4 X 4 SQ.M", "LOCATED IN BEHEIRA, EGYPT"),
+    array("La_website.jpg", "Arabic word لا 'NO', 2020", "Pencil on paper", "Framed: 104 cm x 88 cm", "SOLD"),
+    array("Waw_website.jpg", "Arabic letter و 'W', 2020", "Pencil on paper", "Framed: 54 cm x 41.5 cm", "SOLD"),
+    array("Hashtag_website.jpg", "Hashtag, 2020", "Pencil on paper", "Framed: 54 cm x 41.5 cm", "SOLD"),
+    array("Noon_website.jpg", "Arabic Letter ن 'N', 2020", "Pencil on paper", "Framed: 54 cm x 41.5 cm", "SOLD"),
+    array("Meem_website.jpg", "Arabic Letter م 'M', 2020", "Pencil on paper", "Framed: 41.5 cm x 54 cm", "SOLD"),
+    array("IMG_1736.jpeg", "The Blooming future, 2019", "Mural","4 X 4 SQ.M", "LOCATED IN BEHEIRA, EGYPT"),
     array("MoSalah_website1.jpg", "Mo Salah Jersey, 2018", "Pencil on paper", "Framed: 104 cm x 88 cm", "GIFTED TO MO SALAH, AVAILABLE PRINTS"),
     array("Batman.jpg", "Batman's Time, 2018", "Pencil on paper", "Framed: 67 cm x 116 cm ", "ORIGINAL AND PRINTS AVAILABLE"),
     array("ChaosIII.jpg", "Chaos III: Swirl, 2017", "Pastels on paper", "Framed: 116 cm x 85 cm ", "AVAILABLE IN PLUS ONE GALLERY"),
@@ -93,7 +98,12 @@ $enquiryText = "";
 
 //Overlay Data
 $gallery_image_to_overlay_size = [
-    ""2837*2813" =>  array(77.5, 100),
+    "1074*1452" =>  array(77.5, 100), /*la*/
+    "1411*1058" =>  array(77.5, 100), /*waw*/
+    "1411*1058" =>  array(77.5, 100), /*hashtag*/
+    "1411*1058" =>  array(77.5, 100), /*noon*/
+    "1043*1411" =>  array(77.5, 100), /*meem*/
+    "2837*2813" =>  array(77.5, 100), /*blooming future*/
     "828*978" => array(92.5, 100), /*Mo Salah*/
     "3264*2448" => array(58.5, 100), /*Batman*/
     "2321*3189" => array(100, 93), /*Chaos III*/
