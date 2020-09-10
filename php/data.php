@@ -19,6 +19,7 @@ $imagesLocationNormal = "public/img/normalSize/";
 
 $artworkImages = array
 (
+    array("IMG_1736.jpg", "The Blooming future, 2019", "Mural","4 X 4 SQ.M", "LOCATED IN BEHEIRA, EGYPT"),
     array("MoSalah_website1.jpg", "Mo Salah Jersey, 2018", "Pencil on paper", "Framed: 104 cm x 88 cm", "GIFTED TO MO SALAH, AVAILABLE PRINTS"),
     array("Batman.jpg", "Batman's Time, 2018", "Pencil on paper", "Framed: 67 cm x 116 cm ", "ORIGINAL AND PRINTS AVAILABLE"),
     array("ChaosIII.jpg", "Chaos III: Swirl, 2017", "Pastels on paper", "Framed: 116 cm x 85 cm ", "AVAILABLE IN PLUS ONE GALLERY"),
@@ -92,6 +93,7 @@ $enquiryText = "";
 
 //Overlay Data
 $gallery_image_to_overlay_size = [
+    ""2837*2813" =>  array(77.5, 100),
     "828*978" => array(92.5, 100), /*Mo Salah*/
     "3264*2448" => array(58.5, 100), /*Batman*/
     "2321*3189" => array(100, 93), /*Chaos III*/
