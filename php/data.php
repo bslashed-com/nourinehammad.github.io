@@ -101,9 +101,9 @@ $enquiryText = "";
 
 //Overlay Data
 $gallery_image_to_overlay_size = [
-    "1701*2197" =>  array(104.5, 100), /*King of <3*/
-    "2016*1512" =>  array(58.5, 100), /*Float II*/
-    "1411*1058" =>  array(58.5, 100), /*Float I*/
+    "1191*1538" =>  array(104.5, 100), /*King of <3*/
+    "756*1008" =>  array(58.5, 100), /*Float II*/
+    "692*939" =>  array(58.5, 100), /*Float I*/
     "1878*1384" =>  array(104.5, 100), /*la*/
     "1411*1058" =>  array(58.5, 100), /*waw*/
     "1411*1058" =>  array(58.5, 100), /*hashtag*/
