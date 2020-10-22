@@ -19,6 +19,9 @@ $imagesLocationNormal = "public/img/normalSize/";
 
 $artworkImages = array
 (
+    array("King_website.jpg", "King of hearts, 2020", "Pencil on paper", "Framed: 96 cm x 72 cm", "SOLD"),
+    array("Float_II_website.jpg", "Float II, 2020", "Pencil on paper", "Framed: 54 cm x 80 cm", "SOLD"),
+    array("Float_I_website.jpg", "Float I, 2020", "Pencil on paper", "Framed: 54 cm x 80 cm", "SOLD"),
     array("La_website.jpg", "Arabic word لا 'NO', 2020", "Pencil on paper", "Framed: 104 cm x 88 cm", "SOLD"),
     array("Waw_website.jpg", "Arabic letter و 'W', 2020", "Pencil on paper", "Framed: 54 cm x 41.5 cm", "SOLD"),
     array("Hashtag_website.jpg", "Hashtag, 2020", "Pencil on paper", "Framed: 54 cm x 41.5 cm", "SOLD"),
@@ -98,7 +101,10 @@ $enquiryText = "";
 
 //Overlay Data
 $gallery_image_to_overlay_size = [
-    "1074*1452" =>  array(104.5, 100), /*la*/
+    "1701*2197" =>  array(104.5, 100), /*King of <3*/
+    "2016*1512" =>  array(58.5, 100), /*Float II*/
+    "1411*1058" =>  array(58.5, 100), /*Float I*/
+    "1878*1384" =>  array(104.5, 100), /*la*/
     "1411*1058" =>  array(58.5, 100), /*waw*/
     "1411*1058" =>  array(58.5, 100), /*hashtag*/
     "1411*1058" =>  array(58.5, 100), /*noon*/
