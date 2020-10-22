@@ -98,11 +98,11 @@ $enquiryText = "";
 
 //Overlay Data
 $gallery_image_to_overlay_size = [
-    "1074*1452" =>  array(77.5, 100), /*la*/
-    "1411*1058" =>  array(77.5, 100), /*waw*/
-    "1411*1058" =>  array(77.5, 100), /*hashtag*/
-    "1411*1058" =>  array(77.5, 100), /*noon*/
-    "1043*1411" =>  array(77.5, 100), /*meem*/
+    "1074*1452" =>  array(104.5, 100), /*la*/
+    "1411*1058" =>  array(58.5, 100), /*waw*/
+    "1411*1058" =>  array(58.5, 100), /*hashtag*/
+    "1411*1058" =>  array(58.5, 100), /*noon*/
+    "1043*1411" =>  array(111.5, 100), /*meem*/
     "2837*2813" =>  array(77.5, 100), /*blooming future*/
     "828*978" => array(92.5, 100), /*Mo Salah*/
     "3264*2448" => array(58.5, 100), /*Batman*/
