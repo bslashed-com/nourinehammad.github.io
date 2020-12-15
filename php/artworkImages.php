@@ -1,7 +1,6 @@
 <?php
 
 
-
 /////////////////////////// Articles Functions ///////////////////////////
 function getArticlesCount()
 {
@@ -91,36 +90,36 @@ function getGalleryColumnCount()
     return $maxImagesPerColumn;
 }
 
-function givenImageIndexGetNextIndex($index,$images)
+function givenImageIndexGetNextIndex($index, $images)
 {
     $count = getImageCount();
     $result = ($index + 1) % $count;
-    if (isIndexEmpty($result,$images)) {
-        return givenImageIndexGetNextIndex($result,$images);
+    if (isIndexEmpty($result, $images)) {
+        return givenImageIndexGetNextIndex($result, $images);
     } else {
         return $result;
     }
 }
 
-function givenImageIndexGetPreviousIndex($index,$images)
+function givenImageIndexGetPreviousIndex($index, $images)
 {
     $count = getImageCount();
     if ($index == 0) {
         return $count - 1;
     } else {
         $result = $index - 1;
-        if (isIndexEmpty($result,$images)) {
-            return givenImageIndexGetPreviousIndex($result,$images);
+        if (isIndexEmpty($result, $images)) {
+            return givenImageIndexGetPreviousIndex($result, $images);
         } else {
             return $result;
         }
     }
 }
 
-function isIndexEmpty($index,$images)
+function isIndexEmpty($index, $images)
 {
     global $imagesLocationSmall;
-    $imagePath = givenImageIndexGetSmallImagePath($index,$images);
+    $imagePath = givenImageIndexGetSmallImagePath($index, $images);
     if ($imagePath == $imagesLocationSmall) {
         return true;
     } else {
@@ -129,31 +128,31 @@ function isIndexEmpty($index,$images)
 }
 
 
-function givenImageIndexGetSmallImagePath($index,$images)
+function givenImageIndexGetSmallImagePath($index, $images)
 {
     global $imagesLocationSmall;
     return $imagesLocationSmall . $images[$index][0];
 }
 
-function givenImageIndexGetBigImagePath($index,$images)
+function givenImageIndexGetBigImagePath($index, $images)
 {
     global $imagesLocationNormal;
     return $imagesLocationNormal . $images[$index][0];
 }
 
 
-function givenImageIndexGetImageCaption($index,$images)
+function givenImageIndexGetImageCaption($index, $images)
 {
     return $images[$index][1];
 }
 
-function givenArtworkImageIndexGetImageDiv($index,$images)
+function givenArtworkImageIndexGetImageDiv($index, $images)
 {
     global $imagesLocationNormal, $gallery_image_to_overlay_size;
 
-    $imagePathSmall = givenImageIndexGetSmallImagePath($index,$images);
-    $imagePathBig = givenImageIndexGetBigImagePath($index,$images);
-    $imageCaption = givenImageIndexGetImageCaption($index,$images);
+    $imagePathSmall = givenImageIndexGetSmallImagePath($index, $images);
+    $imagePathBig = givenImageIndexGetBigImagePath($index, $images);
+    $imageCaption = givenImageIndexGetImageCaption($index, $images);
 
 
     $j = 0;
@@ -163,7 +162,7 @@ function givenArtworkImageIndexGetImageDiv($index,$images)
     $imageFrame = $images[$index][$j++];
     $soldOptional = array_key_exists($j, $images[$index]) ? $images[$index][$j++] : "";
 
-    if (!isIndexEmpty($index,$images)) {
+    if (!isIndexEmpty($index, $images)) {
 
         list($width, $height, $type, $attr) = getimagesize($imagePathBig);
 
@@ -171,9 +170,11 @@ function givenArtworkImageIndexGetImageDiv($index,$images)
         if (isset($gallery_image_to_overlay_size[$width . '*' . $height])) {
             $computedOverlayHeight = $gallery_image_to_overlay_size[$width . '*' . $height][0];
             $computedOverlayWidth = $gallery_image_to_overlay_size[$width . '*' . $height][1];
+            $computedOverlagMarginLeft = $gallery_image_to_overlay_size[$width . '*' . $height][2];
         } else {
             $computedOverlayHeight = 100;
             $computedOverlayWidth = 100;
+            $computedOverlagMarginLeft = 0;
         }
         $titleMargin = $computedOverlayHeight * 0.26;
         $margin_of_img_to_make_space_smaller = 100 - $computedOverlayHeight;
@@ -185,7 +186,7 @@ function givenArtworkImageIndexGetImageDiv($index,$images)
       <a class="gallery_a_element hrefToRemoveInMobile" href="%s" data-size="' . $widthOfDataSize . 'x' . $height . '" >
                           <div style="position:relative; display:block; background-image: url(%s); margin-bottom:-' . $margin_of_img_to_make_space_smaller . '%%!important;" class="refcontainer">
                           <div class=" overlay overlaysmall" style="display: block; height:' . $computedOverlayHeight . '%% !important;
-                           width:' . $computedOverlayWidth . '%% !important;">
+                           width:' . $computedOverlayWidth . '%% !important; margin-left:' . $computedOverlagMarginLeft . 'px">
                           <span class="theCorrectFontParagraph titleSize overlayTitle" style="margin-top: ' . $titleMargin . '%%;color:white;">' . $imageName . '</span>
 
                           <span style="color:white;" class="theCorrectFontParagraph size overlaySizeAndMedium">' . $imageFrame . '<br>

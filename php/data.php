@@ -27,7 +27,7 @@ $artworkImages = array
     array("Hashtag_website.jpg", "Hashtag, 2020", "Pencil on paper", "Framed: 54 cm x 41.5 cm", "SOLD"),
     array("Noon_website.jpg", "Arabic Letter ن 'N', 2020", "Pencil on paper", "Framed: 54 cm x 41.5 cm", "SOLD"),
     array("Meem_website.jpg", "Arabic Letter م 'M', 2020", "Pencil on paper", "Framed: 41.5 cm x 54 cm", "SOLD"),
-    array("IMG_1736.jpeg", "The Blooming future, 2019", "Mural","4 X 4 SQ.M", "LOCATED IN BEHEIRA, EGYPT"),
+    array("IMG_1766.jpeg", "The Blooming future, 2019", "Mural", "4 X 4 SQ.M", "UNITED NATIONS MURAL"),
     array("MoSalah_website1.jpg", "Mo Salah Jersey, 2018", "Pencil on paper", "Framed: 104 cm x 88 cm", "GIFTED TO MO SALAH, AVAILABLE PRINTS"),
     array("Batman.jpg", "Batman's Time, 2018", "Pencil on paper", "Framed: 67 cm x 116 cm ", "ORIGINAL AND PRINTS AVAILABLE"),
     array("ChaosIII.jpg", "Chaos III: Swirl, 2017", "Pastels on paper", "Framed: 116 cm x 85 cm ", "AVAILABLE IN PLUS ONE GALLERY"),
@@ -87,13 +87,13 @@ $articles = array
 //Courses Data
 $courses = array
 (
-   array("Photorealistic Drawing with Pencils: Beginner to Advanced | Udemy", "https://www.udemy.com/photorealistic-drawing-with-pencils-beginner-to-advanced"),
+    array("Photorealistic Drawing with Pencils: Beginner to Advanced | Udemy", "https://www.udemy.com/photorealistic-drawing-with-pencils-beginner-to-advanced"),
 );
 
 //Contact Data
 $contactPageText = "contact@nourinehammad.com";
 $facebookPage = "https://m.facebook.com/profile.php?id=1413192872293705&refid=17";
-$instagramPage = "https://www.instagram.com/nourinehammad_art/";
+$instagramPage = "https://www.instagram.com/nourinehammad/";
 $enquiryText = "";
 
 
@@ -101,38 +101,37 @@ $enquiryText = "";
 
 //Overlay Data
 $gallery_image_to_overlay_size = [
-    "1191*1538" =>  array(104.5, 100), /*King of <3*/
-    "756*1008" =>  array(58.5, 100), /*Float II*/
-    "692*939" =>  array(58.5, 100), /*Float I*/
-    "1878*1384" =>  array(104.5, 100), /*la*/
-    "1411*1058" =>  array(58.5, 100), /*waw*/
-    "1411*1058" =>  array(58.5, 100), /*hashtag*/
-    "1411*1058" =>  array(58.5, 100), /*noon*/
-    "1043*1411" =>  array(111.5, 100), /*meem*/
-    "2837*2813" =>  array(77.5, 100), /*blooming future*/
-    "828*978" => array(92.5, 100), /*Mo Salah*/
-    "3264*2448" => array(58.5, 100), /*Batman*/
-    "2321*3189" => array(100, 93), /*Chaos III*/
-    "2362*3262" => array(100, 92.7), /*Chaos II*/
-    "1215*1632" => array(100, 95.1), /*Chaos*/
-    "1732*1232" => array(55.4, 100), /*Hypnotizing lollipops*/
-    "2448*3264" => array(100, 96), /*The Jolly Joker*/
-    "1208*1632" => array(100, 94.5), /*The Joker I*/
-    "1218*1632" => array(100, 95.4), /*The Joker II*/
-    "2432*2855" => array(91.5, 100), /*Box of Chocolate*/
-    "2784*3984" => array(100, 89.4), /*Ace spade*/
-    "2880*4064" => array(100, 90.6),/*Ace heart*/
-    "1351*1935" => array(100, 89.4),/*Ace club*/
-    "1428*2019" => array(100, 90.3),/*Ace diamond*/
-    "1845*2487" => array(100, 94.9),/*King*/
-    "1200*1665" => array(100, 92),/*Queen*/
-    "2126*2862" => array(100, 95),/*Jack*/
-    "2267*1700" => array(58.6, 100),/*Mickey*/
-    "629*533" => array(66.1, 100),/*Chipsy*/
-    "1084*1181" => array(85.1, 100),/*Dollar*/
-    "2710*2260" => array(65.1, 100),/*Euro*/
-    "1432*1368" => array(74.6, 100),/*Crushed Can*/
-    "1694*1610" => array(74.1, 100),/*Light bulb*/
+    "1191*1538" => array(100, 99.5, 0), /*King of <3*/
+    "756*1008" => array(100, 96.5, 8), /*Float II*/
+    "939*692" => array(100, 94.5, 12), /*Float I*/
+    "1074*1452" => array(100, 94.5, 12), /*la*/
+    "1411*1058" => array(58.5, 100, 0), /*waw*/
+    "1411*1058" => array(58.5, 100, 0), /*hashtag*/
+    "1411*1058" => array(58.5, 100, 0), /*noon*/
+    "1043*1411" => array(100, 94.5, 12), /*meem*/
+    "2837*2813" => array(77.5, 100, 0), /*blooming future*/
+    "828*978" => array(92.5, 100, 0), /*Mo Salah*/
+    "3264*2448" => array(58.5, 100, 0), /*Batman*/
+    "2321*3189" => array(100, 93, 16), /*Chaos III*/
+    "2362*3262" => array(100, 92.7, 16), /*Chaos II*/
+    "1215*1632" => array(100, 95.1, 12), /*Chaos*/
+    "1732*1232" => array(55.4, 100, 0), /*Hypnotizing lollipops*/
+    "2448*3264" => array(100, 96, 9), /*The Jolly Joker*/
+    "1208*1632" => array(100, 94.5, 13), /*The Joker I*/
+    "1218*1632" => array(100, 95.4, 11), /*The Joker II*/
+    "2432*2855" => array(91.5, 100, 0), /*Box of Chocolate*/
+    "2784*3984" => array(100, 89.4, 24), /*Ace spade*/
+    "2880*4064" => array(100, 90.6, 23),/*Ace heart*/
+    "1351*1935" => array(100, 89.4, 23),/*Ace club*/
+    "1428*2019" => array(100, 90.3, 22),/*Ace diamond*/
+    "1845*2487" => array(100, 94.9, 12),/*King*/
+    "1200*1665" => array(100, 92.5, 17),/*Queen*/
+    "2267*1700" => array(58.6, 100, 0),/*Mickey*/
+    "629*533" => array(66.1, 100, 0),/*Chipsy*/
+    "1084*1181" => array(85.1, 100, 0),/*Dollar*/
+    "2710*2260" => array(65.1, 100, 0),/*Euro*/
+    "1432*1368" => array(74.6, 100, 0),/*Crushed Can*/
+    "1694*1610" => array(74.1, 100, 0),/*Light bulb*/
 
 
 ];
