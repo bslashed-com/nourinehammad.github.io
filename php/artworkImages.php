@@ -224,7 +224,11 @@ function givenArtworkImageIndexGetImageDiv($index, $images)
     ';
         }
         //$formatNew .= '<p>'.$imageName .'</p>';
-        $formatNew .= '<p class="pContentNone pMargin">&nbsp&nbsp' . $imageMedium . '</p>';
+        if ($soldOptional == "") {
+            $formatNew .= '<p class="pContentNone pMargin">&nbsp&nbsp' . $imageMedium . '</p>';
+        } else {
+            $formatNew .= '<p class="pContentNone pMargin">&nbsp&nbsp' . $imageMedium . '&nbsp&nbsp <span title="Sold" class="cursor-pointer text-red-700 pl-1">●</span> </p>';
+        }
         $formatNew .= '<p class="pContentNone pMargin">&nbsp&nbsp' . $imageFrame . '</p>';
 
 
