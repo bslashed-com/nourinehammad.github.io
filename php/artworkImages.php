@@ -224,7 +224,7 @@ function givenArtworkImageIndexGetImageDiv($index, $images)
     ';
         }
         //$formatNew .= '<p>'.$imageName .'</p>';
-        if ($soldOptional == "") {
+        if ($soldOptional != "SOLD") {
             $formatNew .= '<p class="pContentNone pMargin">&nbsp&nbsp' . $imageMedium . '</p>';
         } else {
             $formatNew .= '<p class="pContentNone pMargin">&nbsp&nbsp' . $imageMedium . '&nbsp&nbsp <span title="Sold" class="cursor-pointer text-red-700 pl-1">●</span> </p>';
@@ -232,7 +232,7 @@ function givenArtworkImageIndexGetImageDiv($index, $images)
         $formatNew .= '<p class="pContentNone pMargin">&nbsp&nbsp' . $imageFrame . '</p>';
 
 
-        if ($soldOptional == "") {
+        if ($soldOptional != "SOLD") {
             $formatNew .= '<p class="pContentNone pSpaceToNextImageWithoutSold">&nbsp&nbsp ' . $soldOptional . '</p>';
         } else {
             $formatNew .= '<p class="pContentNone pSpaceToNextImage pSold">&nbsp&nbsp ' . $soldOptional . '</p>';
